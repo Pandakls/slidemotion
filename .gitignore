@@ -9,12 +9,12 @@
 *.booproj
 *.exe
 
-/Library
-/Library/metadata/
-/Library/FailedAssetImports.txt
-/Library/cache/
-/Library/previews/
-/Library/ScriptAssemblies
+src/IHM/Library
+src/IHM/Library/metadata/
+src/IHM/Library/FailedAssetImports.txt
+src/IHM/Library/cache/
+src/IHM/Library/previews/
+src/IHM/Library/ScriptAssemblies
 /obj
 /Temp
 ExportedObj/
