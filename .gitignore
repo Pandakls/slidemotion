@@ -10,6 +10,7 @@
 *.exe
 
 /Library
+/Library/metadata/
 /Library/FailedAssetImports.txt
 /Library/cache/
 /Library/previews/
