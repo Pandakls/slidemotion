@@ -13,8 +13,8 @@ public class FingerCountChecker : MonoBehaviour {
 	bool isGrabbed = false;
 	Leap.Vector initialPinchPosition;
 	Leap.Vector initialHandOrientation;
-	Leap.Vector movement;
-	float angleOfRotation;
+	//Leap.Vector movement;
+	//float angleOfRotation;
 	//PlayerMovement playermovment
 
 	// Use this for initialization
@@ -55,19 +55,19 @@ public class FingerCountChecker : MonoBehaviour {
 		if (isGrabbed) {
 			text.text += "\nGrabbed!";
 			//Compute movement from initial position
-			movement = _leapManager.frontmostHand().PalmPosition - initialPinchPosition;
+			//movement = _leapManager.frontmostHand().PalmPosition - initialPinchPosition;
 			//Compute rotation from initial position
-			Leap.Vector finalHandOrientation = _leapManager.frontmostHand().PalmPosition - _leapManager.frontmostHand().Fingers.Rightmost.StabilizedTipPosition;
-			finalHandOrientation.y = 0;
-			finalHandOrientation = finalHandOrientation.Normalized;
-			angleOfRotation =  Mathf.Acos(initialHandOrientation.x*finalHandOrientation.x + initialHandOrientation.y*finalHandOrientation.y);
+			//Leap.Vector finalHandOrientation = _leapManager.frontmostHand().PalmPosition - _leapManager.frontmostHand().Fingers.Rightmost.StabilizedTipPosition;
+			//finalHandOrientation.y = 0;
+			//finalHandOrientation = finalHandOrientation.Normalized;
+			//angleOfRotation =  Mathf.Acos(initialHandOrientation.x*finalHandOrientation.x + initialHandOrientation.y*finalHandOrientation.y);
 
 			//PlayerMovement.Move (movement.x, movement.z);
 			//PlayerMovement.Rotate(angleOfRotation);
 
 			//Set new initial start for next iterations
-			initialHandOrientation = finalHandOrientation;
-			initialPinchPosition = _leapManager.frontmostHand().PalmPosition;
+			//initialHandOrientation = finalHandOrientation;
+			//initialPinchPosition = _leapManager.frontmostHand().PalmPosition;
 
 		}
 
